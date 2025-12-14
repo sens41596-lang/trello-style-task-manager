@@ -1,70 +1,169 @@
-# Getting Started with Create React App
+🗂️ Trello-Style Task Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Trello / Notion-like Task Management Web Application built using React and Tailwind CSS.
+The application allows users to create, organize, and manage tasks across multiple boards with drag & drop, filters, and full CRUD functionality.
 
-## Available Scripts
+This project is developed as per the given assignment instructions.
 
-In the project directory, you can run:
+📌 Problem Statement
 
-### `npm start`
+Build a task management application similar to Trello / Notion Tasks where users can:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create tasks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Categorize them into boards
 
-### `npm test`
+Drag & drop tasks between boards
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Filter and sort tasks
 
-### `npm run build`
+Persist data locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The UI must be clean, responsive, and user-friendly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🚀 Features Implemented
+✅ Layout & UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Three board columns:
 
-### `npm run eject`
+To-Do
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+In-Progress
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Completed
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Card-based task design
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Responsive layout (desktop & mobile)
 
-## Learn More
+Centered Trello-style boards with horizontal scrolling
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Top navigation bar with Add Task button
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ Task Management (CRUD)
 
-### Code Splitting
+Create Task
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Title
 
-### Analyzing the Bundle Size
+Description
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Priority (Low / Medium / High)
 
-### Making a Progressive Web App
+Status (Board)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Due Date (optional)
 
-### Advanced Configuration
+Read Tasks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Loaded from tasks.json initially
 
-### Deployment
+Persisted using localStorage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Update Task
 
-### `npm run build` fails to minify
+Click a card to edit any field
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Delete Task
+
+Delete with confirmation prompt
+
+✅ Drag & Drop
+
+Drag tasks between:
+
+To-Do → In-Progress → Completed
+
+Status updates instantly on drop
+
+Smooth interaction using react-beautiful-dnd
+
+✅ Filtering & Sorting
+
+Filter tasks by:
+
+Priority
+
+Status
+
+Sort tasks by:
+
+Newest first
+
+Oldest first
+
+🛠️ Technologies Used
+
+React (Functional Components & Hooks)
+
+Tailwind CSS
+
+react-beautiful-dnd
+
+localStorage (Data persistence)
+
+Create React App
+
+Only technologies allowed in the assignment are used.
+⚙️ Setup Instructions (Windows CMD / PowerShell)
+1️⃣ Clone the Repository
+git clone https://github.com/sens41596-lang/trello-style-task-manager.git
+cd trello-style-task-manager
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Run the Application
+npm start
+
+
+📍 Application runs at:
+
+http://localhost:3000
+
+💾 Data Handling
+
+Initial tasks are loaded from public/tasks.json
+
+All updates (create, edit, delete, drag & drop) are saved to localStorage
+
+Data persists across browser refresh
+
+🧪 CRUD Operations Summary
+Operation	Description
+Create	Add a new task via modal
+Read	Load tasks from JSON / localStorage
+Update	Edit tasks by clicking on cards
+Delete	Delete tasks with confirmation
+🎯 Evaluation Criteria Mapping
+Requirement	Status
+UI / UX Quality	✅ Implemented
+Component Structure	✅ Clean & modular
+CRUD Operations	✅ Completed
+Drag & Drop	✅ Implemented
+Filtering & Sorting	✅ Implemented
+localStorage Persistence	✅ Implemented
+Responsive Design	✅ Implemented
+🚀 Possible Enhancements
+
+Dark mode
+
+Search functionality
+
+Backend integration
+
+User authentication
+
+Task labels & comments
+
+👤 Author
+
+Sandeep Sen
+B.Tech Computer Science Engineering
+Aspiring Frontend / MERN Stack Developer
+
+GitHub: https://github.com/sens41596-lang
+
+📄 License
+
+This project is created for learning and assignment submission purposes.
